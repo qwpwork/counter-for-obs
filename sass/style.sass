@@ -1,0 +1,57 @@
+@font-face
+  font-family: 'Augusta'
+  src: url(../fonts/Augusta.ttf)
+
+html
+  background: #4a4a4a
+
+.wrapper
+  left: 50%
+  top: 50%
+  position: absolute
+  transform: translateX(-50%) translateY(-50%)
+
+.count
+  width: 100vw
+  background: #000
+  white-space: nowrap
+
+  &__text
+    font-size: 5.5em
+    color: #f2f2f2
+    font-weight: bold
+    letter-spacing: 2px
+    font-family: Augusta
+    text-shadow: #000 3px 0 0, #000 0 3px 0, #000 -2px 0 0, #000 0 -2px 0
+
+  &__panel
+    max-width: 400px
+    text-align: center
+    margin: 40px auto 0 auto
+
+  &__input
+    margin: 0
+    border: 0
+    outline: 0
+    padding: 0
+    height: 45px
+    margin-top: 3px
+    text-indent: 5px
+    border-radius: 4px
+    background: #ccc   
+
+  &__btn
+    height: 48px
+    color: white
+    outline: none
+    padding: 0 8px
+    font-size: 20px
+    border-radius: 4px
+    font-weight: normal
+    background: #4a4a4a
+    vertical-align: middle
+    border: 2px solid #000
+    transition: 0.15s ease-in
+    color: #f2f2f2
+    &:hover
+      cursor: pointer
