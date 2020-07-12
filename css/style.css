@@ -36,7 +36,8 @@ html {
 
 .count {
   width: 100vw;
-  background: #00ff00; }
+  background: #00ff00;
+  padding: 20px 0; }
   .count__text {
     font-size: 5.5em;
     color: #f2f2f2;
@@ -57,7 +58,8 @@ html {
     text-indent: 5px;
     border-radius: 4px;
     background: #fff;
-    border: 2px solid #4a4a4a; }
+    border: 2px solid #4a4a4a;
+    width: 100%; }
   .count__btn {
     height: 48px;
     color: white;
@@ -89,8 +91,5 @@ html {
   text-align: left;
   font-size: 12px;
   margin-bottom: 2px; }
-
-#countInput, #countSetBtn {
-  width: calc(50% - 5px); }
 
 /*# sourceMappingURL=style.css.map */

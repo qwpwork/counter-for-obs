@@ -39,6 +39,16 @@ function incrementAndDecrement(option) {
   countInput.value = countValue;
 }
 
+window.addEventListener("keypress", function(event){
+  keycode = event.which;
+  if (keycode == 43) {
+    incrementAndDecrement('plus');
+  }
+  if (keycode == 45) {
+    incrementAndDecrement('minus');
+  }
+});
+
 countIncrement.addEventListener("click", function(event) {
   incrementAndDecrement('plus');
 });
