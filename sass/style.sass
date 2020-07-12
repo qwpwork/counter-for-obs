@@ -1,57 +1,73 @@
+@import './_reset.sass'
+@import './_colors.sass'
 @font-face
   font-family: 'Augusta'
   src: url(../fonts/Augusta.ttf)
 
 html
-  background: #4a4a4a
-
-.wrapper
-  left: 50%
-  top: 50%
-  position: absolute
-  transform: translateX(-50%) translateY(-50%)
+  background: $body-bg-color
+  overflow-x: hidden
+  font-family: sans-serif
 
 .count
   width: 100vw
-  background: #000
-  white-space: nowrap
+  background: $chromakey-color
 
   &__text
     font-size: 5.5em
-    color: #f2f2f2
+    color: $count-text-color
     font-weight: bold
     letter-spacing: 2px
     font-family: Augusta
-    text-shadow: #000 3px 0 0, #000 0 3px 0, #000 -2px 0 0, #000 0 -2px 0
+    text-shadow: $count-text-stroke
 
   &__panel
     max-width: 400px
-    text-align: center
-    margin: 40px auto 0 auto
+    position: relative
+    margin: 40px 0 0 10px
 
   &__input
     margin: 0
-    border: 0
     outline: 0
     padding: 0
-    height: 45px
-    margin-top: 3px
+    height: 44px
+    font-size: 18px
     text-indent: 5px
     border-radius: 4px
-    background: #ccc   
-
+    background: $input-bgcolor   
+    border: 2px solid $input-border-color
   &__btn
     height: 48px
     color: white
     outline: none
-    padding: 0 8px
     font-size: 20px
+    margin: -2px 0 1px 0
     border-radius: 4px
     font-weight: normal
-    background: #4a4a4a
     vertical-align: middle
-    border: 2px solid #000
+    color: $btn-text-color
+    background: $btn-bg-color
     transition: 0.15s ease-in
-    color: #f2f2f2
+    width: 100%
+    border: 2px solid $btn-border-color
+    padding: 0
     &:hover
       cursor: pointer
+      color: $btn-hover-text-color
+      border: 2px solid $btn-hover-border-color
+      background: $btn-hover-bg-color
+.panel
+  
+  &__settings
+    margin-top: 5px
+    max-width: 395px
+    margin-left: 10px
+    .count__input
+      width: 100%
+  &__description
+    text-align: left
+    font-size: 12px
+    margin-bottom: 2px
+
+#countInput, #countSetBtn
+  width: calc(50% - 5px)
