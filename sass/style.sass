@@ -9,11 +9,15 @@ html
   overflow-x: hidden
   font-family: sans-serif
 
+.form-wrapper
+  margin-top: 50px
+
 .count
   width: 100vw
   background: $chromakey-color
   padding: 20px 0
-
+  &__description
+    margin-right: 25px
   &__text
     font-size: 5.5em
     color: $count-text-color
@@ -25,19 +29,21 @@ html
   &__panel
     max-width: 400px
     position: relative
-    margin: 40px 0 0 10px
+    margin: 10px 0 0 10px
 
   &__input
     margin: 0
     outline: 0
     padding: 0
-    height: 44px
+    height: 45px
     font-size: 18px
     text-indent: 5px
     border-radius: 4px
     background: $input-bgcolor   
     border: 2px solid $input-border-color
     width: 100%
+    &_medium
+      width: calc(400px - 110px)
   &__btn
     height: 48px
     color: white
@@ -48,16 +54,20 @@ html
     font-weight: normal
     vertical-align: middle
     color: $btn-text-color
-    background: $btn-bg-color
+    background: $small-btn-bg-color
     transition: 0.15s ease-in
     width: 100%
     border: 2px solid $btn-border-color
     padding: 0
+    &_small
+      width: 48px
+    &_block
+      margin-top: 10px
     &:hover
       cursor: pointer
       color: $btn-hover-text-color
       border: 2px solid $btn-hover-border-color
-      background: $btn-hover-bg-color
+      background: $small-btn-hover-bg-color
 .panel
   
   &__settings

@@ -34,10 +34,15 @@ html {
   overflow-x: hidden;
   font-family: sans-serif; }
 
+.form-wrapper {
+  margin-top: 50px; }
+
 .count {
   width: 100vw;
   background: #00ff00;
   padding: 20px 0; }
+  .count__description {
+    margin-right: 25px; }
   .count__text {
     font-size: 5.5em;
     color: #f2f2f2;
@@ -48,18 +53,20 @@ html {
   .count__panel {
     max-width: 400px;
     position: relative;
-    margin: 40px 0 0 10px; }
+    margin: 10px 0 0 10px; }
   .count__input {
     margin: 0;
     outline: 0;
     padding: 0;
-    height: 44px;
+    height: 45px;
     font-size: 18px;
     text-indent: 5px;
     border-radius: 4px;
     background: #fff;
     border: 2px solid #4a4a4a;
     width: 100%; }
+    .count__input_medium {
+      width: calc(400px - 110px); }
   .count__btn {
     height: 48px;
     color: white;
@@ -70,16 +77,20 @@ html {
     font-weight: normal;
     vertical-align: middle;
     color: #4a4a4a;
-    background: transparent;
+    background: #fff;
     transition: 0.15s ease-in;
     width: 100%;
     border: 2px solid #4a4a4a;
     padding: 0; }
+    .count__btn_small {
+      width: 48px; }
+    .count__btn_block {
+      margin-top: 10px; }
     .count__btn:hover {
       cursor: pointer;
       color: #000;
       border: 2px solid #000;
-      background: #fff; }
+      background: #eee; }
 
 .panel__settings {
   margin-top: 5px;

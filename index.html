@@ -9,40 +9,31 @@
 <body>
   <div class="wrapper">
     <div class="count" id="countWrapper">
-      <span class="count__text count__description" id="countDescription">Bad blood </span>
+      <span class="count__text count__description" id="countText"></span>
       <span class="count__text count__value" id="countValue"></span>
     </div>
-    <div class="count__panel">
-      <p class="panel__description">Инкремент / декремент</p>
-      <button class="count__btn" id="countDecrement">
-        Вычесть единицу
-      </button>
-      <button class="count__btn" id="countIncrement">
-        Прибавить единицу
-      </button>
-    </div>
-    <div class="count__panel">
-      <p class="panel__description">Задать определенное значение счетчику</p>
-      <input class="count__input" id="countInput" type="text" value="0" placeholder="100" required>
-    </div>
-    <div class="count__panel">
-      <button class="count__btn" id="countReset">
-        Сбросить счетчик (double click)
-      </button>
-    </div>
-    <div class="panel__settings">
-      <p class="panel__description">Задать цвет для текста</p>
-      <input class="count__input" id="inputForTextColor" type="text" placeholder="#fff" value="#fff" required>
-    </div>
-    <div class="panel__settings">
-      <p class="panel__description">Задать цвет для фона</p>
-      <input class="count__input" id="inputForBgColor" type="text" placeholder="#00ff00" value="#00ff00" required>
-    </div>
-    <div class="panel__settings">
-      <p class="panel__description">Задать название для счетчика</p>
-      <input class="count__input" id="inputForCountTitle" type="text" placeholder="Bad blood" value="Bad blood" required>
+    <div class="form-wrapper">
+      <div class="panel__settings">
+        <p class="panel__description">Задать название для счетчика</p>
+        <input class="count__input" id="inputForTitle" type="text" placeholder="Название счетичка">
+      </div>
+      <div class="count__panel">
+        <p class="panel__description">Задать число счетчика</p>
+        <button class="count__btn count__btn_small" id="countDecrement">-</button>
+        <input class="count__input count__input_medium" id="countInput" type="text" placeholder="100">
+        <button class="count__btn count__btn_small" id="countIncrement">+</button>
+        <button class="count__btn count__btn_block" id="countReset">Reset(double click)</button>
+      </div>
+      <div class="panel__settings">
+        <p class="panel__description">Задать цвет для текста</p>
+        <input class="count__input" id="inputForTextColor" type="text" placeholder="#fff">
+      </div>
+      <div class="panel__settings">
+        <p class="panel__description">Задать цвет для фона</p>
+        <input class="count__input" id="inputForBgColor" type="text" placeholder="#00ff00">
+      </div>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="./js/remaster.js"></script>
 </body>
 </html>

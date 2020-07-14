@@ -10,7 +10,6 @@ const countBlock = document.getElementById('countValue'),
       countDescription = document.getElementById('countDescription'),
       countIncrement = document.getElementById('countIncrement');
 
-
 if (localStorage.getItem('count') == undefined) {
   localStorage.setItem('count', 0);
 }
